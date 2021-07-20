@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'Marcus Posey',
-    photo: '/photo.png',
+    photo: '/photo.jpg',
     bio: 'Incoming undergraduate student at Cornell University.',
     contacts: {
       email: 'mep296@cornell.edu',
