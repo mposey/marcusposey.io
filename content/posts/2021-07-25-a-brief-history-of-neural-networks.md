@@ -3,7 +3,7 @@ template: post
 title: A Brief History Of Neural Networks
 slug: a-brief-history-of-neural-networks
 socialImage: /media/0_wewd4ggufngv_e8v.jpeg
-draft: true
+draft: false
 date: 2020-05-25T04:05:05.142Z
 description: Everyone is aware of the recent Deep Learning achievements. But
   Neural Networks have a long history starting 80 years ago.
