@@ -1,6 +1,7 @@
-/** 
+/**
  * Generic
  */
+
 html {
   font-size: $typographic-root-font-size;
 }
@@ -109,7 +110,6 @@ strong {
 }
 
 ul {
-  list-style: square;
   @include margin-bottom(1);
 
   & li {

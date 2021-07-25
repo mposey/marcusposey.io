@@ -30,8 +30,9 @@ module.exports = {
     bio: 'Incoming undergraduate student at Cornell University.',
     contacts: {
       email: 'mep296@cornell.edu',
-      github: 'mposey',
       instagram: 'mposey24',
+      twitter: 'marcusposey_',
+      linkedin: 'marcus-posey-98b701180'
     }
   }
 };

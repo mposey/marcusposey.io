@@ -4,9 +4,9 @@
 @use "sass:math";
 
 // Colors
-$color-base: #222;
-$color-primary: #164BC5;
-$color-secondary: #0F9640;
+$color-base: rgba(0, 0, 0, 0.8);
+$color-primary: rgba(0, 0, 0, 0.8);
+$color-secondary: rgba(0, 0, 0, 0.8);
 
 $color-white: #FFF;
 $color-gray: lighten($color-base, 40%);
@@ -34,7 +34,7 @@ $button-border-radius: 20px;
 
 // Layout
 $layout-post-single-width: 945px;
-$layout-post-width: $layout-post-single-width - 305px;
+$layout-post-width: $layout-post-single-width - 245px;
 
 $layout-width: 1070px;
 $layout-breakpoint-sm: 685px;

@@ -2,7 +2,15 @@
 @import '../../assets/scss/mixins';
 
 .feed {
+  color: rgba(0, 0, 0, 0.8);
+  font: 17px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+
   &__item {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
     @include margin-bottom(1.25);
 
     &:last-child {
@@ -10,21 +18,12 @@
     }
 
     &-title {
+      color: #000000CC;
       font-size: $typographic-base-font-size * 1.6875;
+      font-weight: 700;
       @include line-height(1.25);
       @include margin-top(0);
       @include margin-bottom(.25);
-
-      &-link {
-        color: $color-base;
-
-        &:hover,
-        &:focus {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
-        }
-
-      }
 
     }
 
@@ -36,12 +35,12 @@
 
     &-meta {
       @include margin-bottom(0);
+      font-size: 12px;
+      line-height: 1.4em;
+      margin-bottom: 18px;
 
       &-time {
-        font-size: $typographic-small-font-size;
-        color: $color-base;
-        font-weight: 600;
-        text-transform: uppercase;
+        margin-right: 1em;
       }
 
       &-divider {
@@ -49,17 +48,28 @@
       }
 
       &-category {
+        margin-top: 1em;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome, Edge, Opera and Firefox */
         &-link {
-          font-size: $typographic-small-font-size;
-          color: $color-secondary;
-          font-weight: 600;
+          background-color: #0F2E3DE0;
+          color: white;
+          border-color: #0F2E3D;
+          padding: 0.3em 0.5em;
+          font-size: 80%;
+          font-weight: 500;
+          border-radius: 3px;
           text-transform: uppercase;
-
           &:hover,
+          &:active,
           &:focus {
-            color: $color-primary;
+            color: white;
           }
-
         }
 
       }
@@ -72,14 +82,18 @@
       font-weight: bold;
       padding: 5px 0;
 
-      &:hover,
-      &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
-      }
-
     }
 
   }
 
+}
+
+@include breakpoint-md {
+  .feed {
+    &-meta {
+      float: left;
+      width: 15%;
+      margin-top: 8px;
+    }
+  }
 }
